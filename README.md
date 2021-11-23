@@ -1,4 +1,4 @@
-# MuZero Vs. AlphaZero in Tensorflow 
+# [muzero](https://github.com/kaesve/muzero): MuZero Vs. AlphaZero in Tensorflow 
 We provide a readable, commented, well documented, and conceptually easy implementation of the AlphaZero and MuZero algorithms based on the popular AlphaZero-General implementation. 
 Our implementation extends AlphaZero to work with singleplayer domains, like its successor MuZero.
 The codebase provides a modular framework to design your own AlphaZero and MuZero models and an API to pit the two algorithms against each other. 
