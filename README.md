@@ -13,7 +13,8 @@ In order to run experiments/ train agents, you first need a .json configuration 
 Within this .json file you also need to specify a neural network architectures (see [Agents/__init__.py](Agents/__init__.py) for existing architectures).
 Then run Main.py with the following flags to train an agent:
 ```shell
-python Main.py train -c my/config/file.json --game gym_Cartpole-v1 --gpu [INT]
+# [gpu>=0 | cpy<0]
+python Main.py train -c examples/myMuzeroCartpole.json --game cartpole --gpu -1
 ```
 See the [wiki](https://github.com/kaesve/muzero/wiki) for a more elaborate overview of the hyperparameters and how to create new agents or games.
 

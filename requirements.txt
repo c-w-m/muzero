@@ -1,0 +1,22 @@
+tensorflow==2.1.0; python_version <= '3.7'
+tensorflow==2.2; python_version == '3.8'
+tensorflow==2.5; python_version > '3.8'
+
+# keras==2.3.1  # keras.engine.saving line 1183 AttributeError: 'str' object has no attribute 'decode'
+keras==2.4: python_version =< '3.8'   # compatible Tensorflow version <2.5
+keras==2.6: python_version > '3.8'    # compatible Tensorflow version >=2.6<2.7
+
+tqdm==4.62.3
+gym==0.21.0
+
+gym[atari]  # from gym.envs.atari import AtariEnv
+# ale-py==0.7.3
+
+opencv-python==4.5.4.60  # import cv2
+
+# support jupyter notebooks and better visualization
+ipykernel==6.4.1
+jupyterlab==3.2.0
+matplotlib
+plotly==5.3.1
+seaborn==0.11.2

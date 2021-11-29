@@ -37,6 +37,7 @@ def learnA0(g, a0_content: DotDict, a0_run_name: str) -> None:
     :param a0_content: DotDict Data container with hyperparameters for AlphaZero
     :param a0_run_name: str Run name to store data by and annotate results.
     """
+    print(80 * "~")
     print("Testing:", ", ".join(a0_run_name.split("_")))
 
     # Extract neural network and algorithm arguments separately
@@ -66,6 +67,7 @@ def learnM0(g, m0_content: DotDict, m0_run_name: str) -> None:
     :param m0_run_name:
     :return:
     """
+    print(80 * "~")
     print("Testing:", ", ".join(m0_run_name.split("_")))
 
     # Extract neural network and algorithm arguments separately
@@ -131,6 +133,10 @@ def game_from_name(name: str):
 
 
 if __name__ == "__main__":
+    """
+    example: myMuzeroCartpole
+    args: train -c examples/myMuzeroCartpole.json --game cartpole --gpu -1    
+    """
     # Handle console arguments
     parser = argparse.ArgumentParser(description="A MuZero and AlphaZero implementation in Tensorflow.")
 
